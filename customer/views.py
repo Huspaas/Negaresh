@@ -46,5 +46,11 @@ def submitEditContract(request , id):
     return HttpResponseRedirect(reverse('manageContract'))
 
 
-# def counter(request):
-#     count = contract.objects.filter(get_user_model)
+
+def empolyes(request):
+    context = {
+        'employes':get_user_model().objects.all()
+    }
+    return render(request , 'employes.html' , context)
+
+

@@ -13,6 +13,7 @@ urlpatterns = [
     path('deleteContract/<int:id>' , customerViews.deleteContract , name='deleteContract'),
     path('editContract/<int:id>' , customerViews.editContract , name='editContract'),
     path('submitEditContract/<int:id>' , customerViews.submitEditContract , name='submitEditContract'),
+    path('employes/' , customerViews.empolyes , name='employes'),
 
 ]
 
