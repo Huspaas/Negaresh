@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<form class=" pt-3 text-black " method="post" , action="{% url 'contractSave' %}" >
+    {% csrf_token %}
+    نام مشتری <input type="text" name="clientName">
+    نام کارشناس <input type="text" name="dealer">
+    شماره مشتری<input type="tel" name="clientNumber">
+    <input type="submit" value="ثبت اطلاعات" >
+</form>
+
+
+{% endblock body %} 

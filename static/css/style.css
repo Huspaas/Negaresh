@@ -1,0 +1,16 @@
+@font-face {
+    font-family: vazir;
+    src: url(../fonts/Vazir.ttf);
+  }
+
+*{
+    font-family: vazir;
+}
+
+.navRight{
+    height: 50vh;
+}
+
+.tableBox{
+    padding: 50px;
+}
