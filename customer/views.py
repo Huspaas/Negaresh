@@ -13,8 +13,9 @@ def contractSave(request):
     clientName = request.POST['clientName']
     dealer = request.POST['dealer']
     clientNumber = request.POST['clientNumber']
+    print(request.user.id)
     tempContract = contract(clientName=clientName,
-                            dealer=dealer, clientNumber=clientNumber)
+                            dealer=dealer, clientNumber=clientNumber , publisher=request.user)
     tempContract.save()
     return HttpResponseRedirect(reverse('contractForm'))
 
