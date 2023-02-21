@@ -4,26 +4,26 @@
 <table class="table table-striped table-sm mt-4">
     <thead>
         <tr>
-            <th scope="col">تعداد فروش</th>
             <th scope="col">نام</th>
             <th scope="col">نام خانوادگی</th>
+            <th scope="col">تعداد فروش</th>
             <th scope="col">دسترسی</th>
         </tr>
     </thead>
     <tbody>
         {% for contract in totalContracts %}
         <tr>
-            <td>{{contract.total}}</td>
+
             <td>{{contract.first_name}}</td>
             <td>{{contract.last_name}}</td>
+            <td>{{contract.total}}</td>
             <td>
-                <a href="{% url 'employe' %}"><button type="button"
-                        class="btn btn-sm  btn-info text-white">مشاهده وضعیت</button></a>
+                <a href="{% url 'employe' %}"><button type="button" class="btn btn-sm  btn-info text-white">مشاهده
+                        وضعیت</button></a>
             </td>
         </tr>
         {% endfor %}
-        
+
     </tbody>
 </table>
 {% endblock body %}
-
