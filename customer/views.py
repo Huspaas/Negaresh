@@ -62,3 +62,8 @@ def empolyes(request):
 def employe(request):
     context={}
     return render(request , 'employe.html' , context)
+
+
+def signupEmploy(request):
+
+    return render(request , 'signupEmploy.html')
