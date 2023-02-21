@@ -54,3 +54,6 @@ def empolyes(request):
     return render(request , 'employes.html' , context)
 
 
+def employe(request):
+    context={}
+    return render(request , 'employe.html' , context)
