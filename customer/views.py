@@ -2,6 +2,9 @@ from django.shortcuts import render, HttpResponseRedirect
 from .models import contract
 from django.urls import reverse
 from django.contrib.auth import get_user_model
+from django.db.models import Count    
+from django.contrib.auth.models import User
+
 # Create your views here.
 
 
@@ -50,7 +53,8 @@ def submitEditContract(request , id):
 
 def empolyes(request):
     context = {
-        'employes':get_user_model().objects.all()
+        'employes':get_user_model().objects.all(),
+        'totalContracts':User.objects.annotate(total = Count('contract'))
     }
     return render(request , 'employes.html' , context)
 
