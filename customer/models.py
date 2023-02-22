@@ -6,7 +6,7 @@ class contract(models.Model):
     dealer = models.CharField(max_length=50 , verbose_name='نام کارشناس')
     clientNumber = models.CharField(max_length=11 , verbose_name='شماره مشتری' , unique=True)
     time = models.DateTimeField(auto_now_add=True)
-    publisher = models.ForeignKey(User , on_delete=models.PROTECT , verbose_name='منتشرکننده')
+    publisher = models.ForeignKey(User , on_delete=models.SET_NULL , null=True , verbose_name='منتشرکننده')
 
     
  
