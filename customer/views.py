@@ -65,5 +65,12 @@ def employe(request):
 
 
 def signupEmploy(request):
-
-    return render(request , 'signupEmploy.html')
+    if request.method == 'POST':
+        user = request.POST['username']
+        name = request.POST['name']
+        family = request.POST['family']
+        password = request.POST['password']
+        form = User.objects.create_user(username=user,first_name=name,last_name=family,password=password)
+        form.save()
+        return HttpResponseRedirect(reverse('home'))
+    else: return render(request , 'signupEmploy.html')

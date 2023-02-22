@@ -15,7 +15,7 @@ urlpatterns = [
     path('submitEditContract/<int:id>' , customerViews.submitEditContract , name='submitEditContract'),
     path('employes/' , customerViews.empolyes , name='employes'),
     path('employe/', customerViews.employe , name='employe'),
-    path('signupEmploy/' , customerViews.signupEmploy , name='signpEmploy'),
+    path('signupEmploy/' , customerViews.signupEmploy , name='signupEmploy'),
 
 ]
 

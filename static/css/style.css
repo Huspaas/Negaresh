@@ -7,10 +7,14 @@
     font-family: vazir;
 }
 
-.navRight{
-    height: 50vh;
+.based{
+    height: 90vh;
 }
 
 .tableBox{
     padding: 50px;
+}
+
+.formSignup *{
+    margin-bottom: 10px;
 }
