@@ -16,6 +16,8 @@ urlpatterns = [
     path('employes/' , customerViews.empolyes , name='employes'),
     path('employe/', customerViews.employe , name='employe'),
     path('signupEmploy/' , customerViews.signupEmploy , name='signupEmploy'),
+    path('loginEmploy/' , customerViews.loginEmploy , name='loginEmploy'),
+
 
 ]
 

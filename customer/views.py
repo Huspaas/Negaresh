@@ -4,7 +4,7 @@ from django.urls import reverse
 from django.contrib.auth import get_user_model
 from django.db.models import Count    
 from django.contrib.auth.models import User
-
+from django.contrib.auth import login , authenticate
 # Create your views here.
 
 
@@ -74,3 +74,12 @@ def signupEmploy(request):
         form.save()
         return HttpResponseRedirect(reverse('home'))
     else: return render(request , 'signupEmploy.html')
+
+
+def loginEmploy(request):
+    username = request.POST['username']
+    password = request.POST['password']
+    user = authenticate(request, username=username, password=password)
+    if user is not None:
+        login(request, user)
+    return HttpResponseRedirect(reverse('home'))
