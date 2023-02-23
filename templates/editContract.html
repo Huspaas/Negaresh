@@ -2,7 +2,7 @@
 
 {% block body %}
 
-<form class=" pt-3 text-black " method="post" action="/submitEditContract/{{contract.id}}">
+<form class=" pt-3 text-black based" method="post" action="/submitEditContract/{{contract.id}}">
     {% csrf_token %}
     نام مشتری <input type="text" name="clientName" value='{{contract.clientName}}'>
     نام کارشناس <input type="text" name="dealer" value='{{contract.dealer}}'>

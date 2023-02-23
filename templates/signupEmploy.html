@@ -2,7 +2,7 @@
 
 {% block body %}
 <div class="row d-flex justify-content-around align-items-center based ">
-    <div class="col col-4 border rounded p-5 ">
+    <div class="col col-4 border rounded p-5 bg-color">
 
         <div class="form-signin text-center  ">
             <form class="formSignup" method="post" action="{% url 'loginEmploy' %}" >
@@ -23,7 +23,7 @@
             </form>
         </div>
     </div>
-    <div class="col col-4 border rounded p-5">
+    <div class="col col-4 border rounded p-5 bg-color">
         <div class="form-signin text-center  ">
             <form class="formSignup" method="post" action="{% url 'signupEmploy' %}" >
                 {% csrf_token %}

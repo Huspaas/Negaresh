@@ -12,17 +12,16 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid side-color based">
     <header>
       {% block header %}{% endblock header %}
     </header>
     <div class="row">
-      <div class="col col-md-2 navRight">
-
+      <div class="col col-md-2 navRight navRightBgColor based hover-li">
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">
+              <a class="nav-link active text-white hover-li" aria-current="page" href="{% url 'home' %}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="feather feather-home" aria-hidden="true">
@@ -33,7 +32,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'contractForm' %}">
+              <a class="nav-link text-white" href="{% url 'contractForm' %}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="feather feather-file" aria-hidden="true">
@@ -44,7 +43,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'manageContract' %}">
+              <a class="nav-link text-white" href="{% url 'manageContract' %}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="feather feather-layers" aria-hidden="true">
@@ -56,7 +55,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-white" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="feather feather-shopping-cart" aria-hidden="true">
@@ -68,7 +67,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'employes' %}">
+              <a class="nav-link text-white" href="{% url 'employes' %}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="feather feather-users" aria-hidden="true">
@@ -81,7 +80,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-white" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="feather feather-bar-chart-2" aria-hidden="true">
@@ -97,7 +96,7 @@
           <hr>
           <ul class="nav flex-column mb-2">
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'signupEmploy' %}">
+              <a class="nav-link text-white" href="{% url 'signupEmploy' %}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="feather feather-file-text" aria-hidden="true">

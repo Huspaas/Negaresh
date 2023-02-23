@@ -1,20 +1,40 @@
 @font-face {
-    font-family: vazir;
-    src: url(../fonts/Vazir.ttf);
-  }
-
-*{
-    font-family: vazir;
+  font-family: vazir;
+  src: url(../fonts/Vazir.ttf);
 }
 
-.based{
-    height: 90vh;
+* {
+  font-family: vazir;
 }
 
-.tableBox{
-    padding: 50px;
+.based {
+  height: 100vh;
 }
 
-.formSignup *{
-    margin-bottom: 10px;
+.tableBox {
+  padding: 50px;
+}
+
+.formSignup * {
+  margin-bottom: 10px;
+}
+.navRightBgColor {
+  background-color: black;
+}
+.side-color {
+  background-color: rgb(233, 233, 233) !important;
+}
+.bg-color {
+  background-color: white !important;
+}
+.hover-li :hover {
+  color: gold !important;
+}
+.border {
+  padding: 2rem;
+  border: 5px solid;
+  background-color: white !important;
+  border: 5px solid;
+  border-radius: 0.25rem !important;
+  margin-top:2rem;
 }
